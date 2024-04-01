@@ -6,7 +6,7 @@ import streamlit as st
 st.title("Palmer's Penguins")
 st.markdown("Use this Streamlit app to make your own scatterplot about penguins!")
 
-penguin_file = st.file_uploader('Select your local penguins csv (default provided hoe)')
+penguin_file = st.file_uploader('Select your local penguins csv (default provided)')
 if penguin_file is not None:
     penguins_df = pd.read_csv(penguin_file)
 else:
